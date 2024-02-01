@@ -12,6 +12,10 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    img{
+      max-width: 100%;
+      display: block;
+    }
     body{
       padding: 0;
       margin: 6%;
@@ -24,10 +28,8 @@
 
     }
     .container{
-      display: flex;
-      justify-content: center;
       margin: auto;
-      width: 350px;
+      max-width: 350px;
       height: 606px;
      border-radius: 10px;
      background-color: #1f1f1f;
@@ -62,12 +64,7 @@
       
       
     }
-    .sk1{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 20px;
-    }
+
     .sk1 button{
     background-color: #333333;
     color: white;
@@ -76,20 +73,21 @@
     height: 47px;
     font-weight: bolder;
     border: #333333;
+    display: block;
+    margin-bottom: 10px;
     }
     .sk1 button:hover{
       background-color: greenyellow;
       color: black;
       cursor: pointer;
     }
-    @media screen and (min-width:480px) and (max-width:1440px) {
+    .margin-center{
+      margin-inline: auto;
+    }
+   
       
-      .container{
-        width: 500px;
-        height: 700px;
-      }
       
-      }
+  
       
     
 
@@ -111,10 +109,10 @@
       <p>"font-end developer and avid reader".</p>
     </div>
   <div class="sk1">
-    <button>GitHub</button>
-    <button>Linkedin</button>
-    <button>Twitter</button>
-    <button>Instagram</button>
+    <button class="margin-center">GitHub</button>
+    <button class="margin-center">Linkedin</button>
+    <button class="margin-center">Twitter</button>
+    <button class="margin-center">Instagram</button>
   </div>
     </div>
     </div>
